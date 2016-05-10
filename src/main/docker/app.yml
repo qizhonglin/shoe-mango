@@ -1,0 +1,16 @@
+version: '2'
+services:
+    shoe-app:
+        image: shoe
+        external_links:
+            - shoe-mongodb:mongodb
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017
+            - SPRING_DATA_MONGODB_DATABASE=shoe
+        ports:
+            - 8080:8080
+    shoe-mongodb:
+        extends:
+            file: mongodb.yml
+            service: shoe-mongodb

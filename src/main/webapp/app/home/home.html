@@ -1,0 +1,30 @@
+<!--<div>-->
+<uib-carousel active="1" class="carousel" interval="myInterval" no-wrap="noWrapSlides">
+    <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id" >
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+            <h4>Slide {{$index}}</h4>
+            <p>{{slide.text}}</p>
+        </div>
+    </uib-slide>
+</uib-carousel>
+<!--</div>-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 page-content">
+            <h2>Welcome!</h2>
+            <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+            <p><a class="btn btn-primary pull-right" href="#">See our portfolio</a></p>
+        </div>
+        <div class="col-sm-4 page-content">
+            <h2>Recent Updates</h2>
+            <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+            <p><a class="btn btn-primary pull-right" href="#">See what's new!</a></p>
+        </div>
+        <div class="col-sm-4 page-content">
+            <h2>Our Team</h2>
+            <p>Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti. Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+            <p><a class="btn btn-primary pull-right" href="#">Meet the team!</a></p>
+        </div>
+    </div>
+</div>
